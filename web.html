@@ -1,0 +1,145 @@
+<!--
+Project Starter Refactor
+- Split repeated code
+- Use ONE stylesheet for all three pages
+- Includes: index.html, parks.html, contact.html, /css/styles.css
+-->
+
+<!-- ========================= index.html ========================= -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Chuyển đến Nội dung chính</a>
+  <header class="site-header">
+    <h1>WD4E – Project Starter</h1>
+  </header>
+
+  <nav aria-label="Điều hướng chính">
+    <ul>
+      <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+      <li><a href="parks.html">Công viên</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="content">
+      <h2>Giới thiệu</h2>
+      <p>Đây là phiên bản đã tách mã lặp lại và dùng <strong>một stylesheet</strong> dùng chung cho ba trang.</p>
+      <ul class="gallery">
+        <li>
+          <img src="https://picsum.photos/600/380?1" alt="Ảnh minh hoạ 1" />
+          <p>Thẻ <code>li</code> trong gallery dùng <code>display</code> và <code>width</code> theo yêu cầu.</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/600/380?2" alt="Ảnh minh hoạ 2" />
+          <p>Mục 2.</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/600/380?3" alt="Ảnh minh hoạ 3" />
+          <p>Mục 3.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 – WD4E</small>
+  </footer>
+</body>
+</html>
+
+
+<!-- ========================= parks.html ========================= -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Công viên</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Chuyển đến Nội dung chính</a>
+  <header class="site-header">
+    <h1>Các Công viên</h1>
+  </header>
+
+  <nav aria-label="Điều hướng chính">
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="parks.html" aria-current="page">Công viên</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="content">
+      <h2>Danh sách công viên</h2>
+      <p>Trang này kiểm tra rằng các ảnh trong phần <code>.gallery</code> không bị ảnh hưởng bởi style trong phần <code>nav</code>.</p>
+      <ul class="gallery">
+        <li>
+          <img src="https://picsum.photos/600/380?4" alt="Công viên A" />
+          <p>Công viên A</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/600/380?5" alt="Công viên B" />
+          <p>Công viên B</p>
+        </li>
+        <li>
+          <img src="https://picsum.photos/600/380?6" alt="Công viên C" />
+          <p>Công viên C</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 – WD4E</small>
+  </footer>
+</body>
+</html>
+
+
+<!-- ========================= contact.html ========================= -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liên hệ</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Chuyển đến Nội dung chính</a>
+  <header class="site-header">
+    <h1>Liên hệ</h1>
+  </header>
+
+  <nav aria-label="Điều hướng chính">
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="parks.html">Công viên</a></li>
+      <li><a href="contact.html" aria-current="page">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="content">
+      <h2>Gửi lời nhắn</h2>
+      <p>Nội dung liên hệ ví dụ…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 – WD4E</small>
+  </footer>
+</body>
+</html>
+
